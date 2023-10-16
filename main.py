@@ -1,5 +1,6 @@
 import os,random
-pénz = 5000
+pénz = 2500
 veszély = 0
 energia = 100
-idő = 0
+Idő_Óra = 9
+Idő_perc = 0
