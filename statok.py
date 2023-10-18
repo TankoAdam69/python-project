@@ -1,3 +1,4 @@
+
 def energia():
     e = 100
     return print(f'Energia: {e}%')
