@@ -1,0 +1,38 @@
+Győr szimulátor
+----------------------------------------------------------------------------------------------------------------------------------
+A játék Győr belvárosában játszódik és a cél a bécsi vonatjegy megszerzése, ami a napok elteltével egyre nehezebb lesz az infláció miatt.
+----------------------------------------------------------------------------------------------------------------------------------
+#A játékos a vidéki buszmegállóból indul és különböző helyekre juthat el, pénzszerzés céljával.
+
+#A játékos egy nap maximum 6 órát dolgozhat és akkor tud dolgozni ha az energiaszintje 35%-nál nagyobb. 
+
+#A játékos rendelkezik energiával, ami a játék során csökken (2%-al minden új helyre lépéskor), ezt kajavásárlással tudja visszatermelni. 
+
+#A játékosnak van egy veszélymérője, ami azt méri hány százalék esély van arra, hogy kirabolják vagy megverik. Ezt edzőterembe járással vagy ruhavásárlással csökkentheti. 
+
+Habár a játékos rendelkezik valamennyi előre meghatározott kezdőtőkével, az nem elég a vonatjegyre. 
+
+Ezért munkát kell vállalnia az olyan helyeken, mint az Árkád, a Meki vagy akár a KFC. 
+
+#Az órabér előre meghatározott, a játékos maga döntheti el, melyik helyen akar dolgozni. 
+
+A színház egy különleges hely, ahol megnézhet előadásokat és a játékos szerezhet tapasztali pontokat. 
+
+Ha több előadást megnézett, akkor kaphat arra lehetőséget, hogy különböző munkákat vállaljon a színház területén belül (1 előadás megnézésével: takarítói szakma, 2 előadás megnézésével a biztonságiőr szakma szerezhető meg). 5vtapasztalati pont megszerzése után a játékos színésszé válhat. Tapasztalati pontok úgy szerezhetők, hogy a játékos különböző helyeken dolgozik vagy megnéz előadásokat.  
+
+#Az árak előre meg vannak határozva, csak a vonatjegyet érinti az infláció. 
+
+#Az idő arányában telik, ahány helyre ment a játékos. Ez azt jelenti, hogy helytől függően telik. 
+
+A játékosnak mindenképpen el kell érnie az utolsó buszt, ami 22:30kor indul. Ekkor van vége a napnak. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ha a játékosnak nem sikerült elérnie az utolsó buszt, akkor véga a játéknak. A játékosnak van lehetősége előbb is felszállni a buszra. 
+A buszra kötelező jegyet venni, a jegy ára előre meghatározott. 
+
+Ha a játékosnak elfogy az energiája, elalszik, nem éri el a buszt és a játéknak vége. 
+
+Ha a játékos pénze elfogy, a játéknak vége. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#A játékot addig lehet játszani, ameddig szeretné, nincs időkorlát. A napok múlásával azonban egyre nehezebb lesz megszerezni a vonatjegyet. 
+
+#Ha a játékos felszáll a buszra, a következő nap reggelén újra a vidékibe kezd, viszont az előző nap szerzett pénze és veszélymértéke megmarad, viszont az energiája újra 100% lesz.  
