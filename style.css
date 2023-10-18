@@ -1,3 +1,20 @@
-h1{
+.tudnivalo {
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.leiras {
+    margin-top: 55px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.vigyazz{
+    color: red;
+    font-weight: bold;
+}
+
+.template-teteje{
+    padding-top: 40px;
 }
