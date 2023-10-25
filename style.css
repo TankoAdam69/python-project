@@ -19,8 +19,30 @@
     padding-top: 40px;
 }
 
-img{
+.helyszin-img{
     width: 500px;
     height: 250px;
 }
 
+nav{
+    padding-left: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.nav-item{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cím{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.alcím{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
