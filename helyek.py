@@ -20,10 +20,15 @@ def aluljaro():
 def vasutallomas():
     print('\nHelyszín: Vasútállomás')
     print('1: Igen (15000)')
-    print('2: Nem (Vissza aluljáróba)')
+    print('2: Nem (Vissza vidékibe)')
 
 def allomasiDohi():
     print('\nHelyszín: Állomási dohi')
+    
+
+def allomasiDohi2():
+    print('1: Belváros')
+    print('2: Vidéki buszmegálló')
 
 def plaza():
     print('\nHelyszín: Pláza')
@@ -38,3 +43,11 @@ def meki():
     print('\nHelyszín: Meki')
     print('1: Eszel (2500Ft, +35% energia)')
     print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
+
+def belvaros():
+    print('Helyszín: Belváros')
+    print('1: Spar (700Ft, +15% energia)')
+    print('2: Baross út')
+    print('3: Dunakapu tér (Fagyi: 650Ft/gombóc, +10% energia)')
+    print('4: Színház')
+    print('5: Árkád')
