@@ -9,6 +9,31 @@ print('1: Start')
 print('2: Kilépés')
 v = input('Választás: ')
 
+'''
+def lose():
+    if energia > 100:
+        energia = 100
+    elif energia < 0 or energia == 0:
+        energia = 0
+        lose = True
+        print('Vesztettél!')
+        v = input('Szeretnéd újrakezdeni? ')
+        match v:
+            case '1':
+                pass
+    if penz < 0 or penz == 0:
+        penz = 0
+        lose = True
+        print('Vesztettél!')
+        v = input('Szeretnéd újrakezdeni? ')
+        match v:
+            case '1':
+                pass
+def win():
+    pass
+'''
+
+
 match v:
     case '1':
         os.system('cls')
@@ -23,7 +48,7 @@ match v:
         ido = f'{ora}:{perc}0'
         xp = 0
         eloadas = 0
-        rablas = random.randint(1,10)
+        rablas = random.randint(1,2)
         elvettPenz = random.randint(100, 1500)
         bukottEnergia = random.randint(0,35)
         def main():
@@ -46,7 +71,7 @@ match v:
                     ora += 1
                     perc = 0
                     ido = f'{ora}:{perc}0'
-                if perc >= 1 and perc < 10:
+                if perc >= 0 and perc < 10:
                      ido = f'{ora}:0{perc}'
                 print(f'Energia: {energia}%', end='\t\t')
                 print(f'Veszély: {veszely}%', end='\t\t')
@@ -207,6 +232,7 @@ match v:
                             #hely = galaxy()
                     case '2':
                         os.system('cls')
+                        energia -= 2
                         perc += 5
                         ido = f'{ora}:{perc}'
                         if perc > 60:
@@ -281,7 +307,7 @@ match v:
                             print(f'{ido}', end='\t\t')
                             print(f'XP: {xp}')
                             hely = allomasiDohi()
-                            if rablas > 0 and rablas < 6:
+                            if rablas == 1:
                                 os.system('cls')
                                 print(f'Energia: {energia}%', end='\t\t')
                                 print(f'Veszély: {veszely}%', end='\t\t')
