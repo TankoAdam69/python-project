@@ -45,9 +45,38 @@ def meki():
     print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
 
 def belvaros():
-    print('Helyszín: Belváros')
+    print('\nHelyszín: Belváros')
     print('1: Spar (700Ft, +15% energia)')
     print('2: Baross út')
     print('3: Dunakapu tér (Fagyi: 650Ft/gombóc, +10% energia)')
     print('4: Színház')
     print('5: Árkád')
+
+def arkad_kint():
+    print('\nHelyszín: Árkád mellett')
+    print('1: Bemész az Árkádba')
+    print('2: Elmész az ETO Parkhoz')
+
+def arkad_bent():
+    print('\nHelyszín: Árkád')
+    print('1: Elmész enni')
+    print('2: Elmész ruhát venni')
+    print('3: Dolgozol biztonsági őrként (3000Ft/Óra, -45% energia, napi max 6 óra)')
+
+def arkad_eves():
+    print('\nHol szeretnél kaját venni?')
+    print('1: Kfc')
+    print('2: Spar')
+    print('3: Fagyizó')
+
+def arkad_ruha():
+    print('\nHol szeretnél ruhát venni?')
+    print('1: Bershka')
+    print('2: New Yorker')
+    print('3: H&M')
+    print('4: Pull&Bear')
+
+def KFC():
+    print('\nHelyszín: KFC')
+    print('1: Eszel (2500Ft, +35% energia)')
+    print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
