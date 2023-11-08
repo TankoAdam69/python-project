@@ -3,7 +3,7 @@ from helyek import videki, galaxy, aluljaro, vasutallomas, allomasiDohi, allomas
 
 win = False
 lose = False
-print('Győr szimulátor')
+print('Győr szimulátor') 
 print('1: Start')
 print('2: Kilépés')
 v = input('Választás: ')

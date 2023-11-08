@@ -6,7 +6,7 @@ def videki():
     print('4: Sikátor')
     print('5: Belváros')
 
-def galaxy():
+def galaxy(): 
     print('\nHelyszín: Galaxy')
     print('1: Igen (1300Ft, min. 1% veszély)')
     print('2: Nem (Vissza a vidékibe)')
