@@ -38,16 +38,16 @@ nav{
 }
 
 .nav-item{
-    margin-left: 200px;
-    margin-right: 75px;
+    margin-left: 100px;
+    margin-right: 70px;
 }
 
-.cím{
+.cim{
     text-align: center;
     padding-bottom: 30px;
 }
 
-.alcím{
+.alcim{
     text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
