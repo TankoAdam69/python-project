@@ -43,6 +43,7 @@ def meki():
     print('\nHelyszín: Meki')
     print('1: Eszel (2500Ft, +35% energia)')
     print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
+    print('Vissza')
 
 def belvaros():
     print('Helyszín: Belváros')
@@ -51,3 +52,12 @@ def belvaros():
     print('3: Dunakapu tér (Fagyi: 650Ft/gombóc, +10% energia)')
     print('4: Színház')
     print('5: Árkád')
+    print('6: Vissza')
+
+def baross_ut():
+    print('\nHelyszín: Baross út')
+
+def baross_ut2():
+    print('1: KFC')
+    print('2: Meki')
+    print('3: Vissza')
