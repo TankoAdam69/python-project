@@ -44,6 +44,11 @@ def meki():
     print('1: Eszel (2500Ft, +35% energia)')
     print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
 
+def kaszi():
+    print('\nHelyszín: Kaszinó')
+    print('1: Coin Flip')
+    print('2: Roll the Dice')
+
 def belvaros():
     print('\nHelyszín: Belváros')
     print('1: Spar (700Ft, +15% energia)')
