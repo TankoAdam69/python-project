@@ -45,6 +45,12 @@ def meki():
     print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
     print('Vissza')
 
+def kfc():
+    print('\nHelyszín: Meki')
+    print('1: Eszel (2500Ft, +35% energia)')
+    print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
+    print('Vissza')
+
 def belvaros():
     print('Helyszín: Belváros')
     print('1: Spar (700Ft, +15% energia)')

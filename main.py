@@ -1,5 +1,5 @@
 import os, random
-from helyek import videki, galaxy, aluljaro, vasutallomas, allomasiDohi, allomasiDohi2, plaza, belvaros
+from helyek import videki, galaxy, aluljaro, vasutallomas, allomasiDohi, allomasiDohi2, plaza, belvaros, baross_ut, baross_ut2, meki, kfc
 
 win = False
 lose = False
@@ -25,9 +25,10 @@ match v:
         xp = 0
         eloadas = 0
         nap = 1
-        rablas = random.randint(1,2)
+        rablas = random.randint(1,10)
         elvettPenz = random.randint(100, 1500)
         bukottEnergia = random.randint(0,35)
+        eneklosCsavo = random.randint(1, 10)
         def main():
             while win == False and lose == False:
                 os.system('cls')
@@ -43,6 +44,7 @@ match v:
                 global bukottEnergia
                 global nap
                 global hely
+                global eneklosCsavo
                 if perc > 60:
                     ora += 1
                     perc = perc % 60
@@ -300,7 +302,7 @@ match v:
                             print(f'{ido}', end='\t\t')
                             print(f'XP: {xp}')
                             hely = allomasiDohi()
-                            if rablas == 1:
+                            if rablas > 0 and rablas < 6:
                                 os.system('cls')
                                 penz -= elvettPenz
                                 energia -= bukottEnergia
@@ -421,6 +423,132 @@ match v:
                                                         print('Vettél kaját. (-700 Ft, +15% energia)')
                                                         v = '1'
                                                         input('\nENTER')
+                                                case '2':
+                                                    os.system('cls')
+                                                    energia -= 2
+                                                    perc += 10
+                                                    ido = f'{ora}:{perc}'
+                                                    if perc > 60:
+                                                        ora += 1
+                                                        perc = perc % 60
+                                                    if perc == 60:
+                                                        ora += 1
+                                                        perc = 0
+                                                        ido = f'{ora}:{perc}0'
+                                                    if perc >= 1 and perc < 10:
+                                                        ido = f'{ora}:0{perc}'
+                                                    print(f'Energia: {energia}%', end='\t\t')
+                                                    print(f'Veszély: {veszely}%', end='\t\t')
+                                                    print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                    print(f'{ido}', end='\t\t')
+                                                    print(f'XP: {xp}')
+                                                    hely = baross_ut()
+                                                    if eneklosCsavo > 0 and eneklosCsavo < 4:
+                                                        print('\nTalálkoztál az éneklős Csávóval.')
+                                                        input('\nENTER')
+                                                        os.system('cls')
+                                                        print(f'Energia: {energia}%', end='\t\t')
+                                                        print(f'Veszély: {veszely}%', end='\t\t')
+                                                        print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                        print(f'{ido}', end='\t\t')
+                                                        print(f'XP: {xp}')
+                                                        print('\n1: Igen (200 Ft)')
+                                                        print('2: Nem')
+                                                        v = input('Adsz neki pénzt? ')
+                                                        match v:
+                                                            case '1':
+                                                                os.system('cls')
+                                                                penz -= 200
+                                                                print(f'Energia: {energia}%', end='\t\t')
+                                                                print(f'Veszély: {veszely}%', end='\t\t')
+                                                                print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                                print(f'{ido}', end='\t\t')
+                                                                print(f'XP: {xp}')
+                                                                print('\nNagyon örült neki, megköszönte és elment. (-200 Ft)')
+                                                                input('\nENTER')
+                                                            case '2':
+                                                                os.system('cls')
+                                                                veszely += 5
+                                                                print(f'Energia: {energia}%', end='\t\t')
+                                                                print(f'Veszély: {veszely}%', end='\t\t')
+                                                                print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                                print(f'{ido}', end='\t\t')
+                                                                print(f'XP: {xp}')
+                                                                print(f'\nNem tetted boldoggá, a veszélyszinted értéke ennyire emelkedett: {veszely}%')
+                                                                input('\nENTER')
+                                                            case '17.10.43.35.31':
+                                                                os.system('cls')
+                                                                print(f'Energia: {energia}%', end='\t\t')
+                                                                print(f'Veszély: {veszely}%', end='\t\t')
+                                                                print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                                print(f'{ido}', end='\t\t')
+                                                                print(f'XP: {xp}')
+                                                                nev = input('Írd be a neved: ')
+                                                                input('\nENTER')
+                                                                os.system('cls')
+                                                                print(f'Energia: {energia}%', end='\t\t')
+                                                                print(f'Veszély: {veszely}%', end='\t\t')
+                                                                print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                                print(f'{ido}', end='\t\t')
+                                                                print(f'XP: {xp}')
+                                                                print('\nTe: Szerintem a Dézsit megkéne ölni.')
+                                                                print('\nÉneklős Csávó: Hogy hívnak?')
+                                                                print(f'\nTe: {nev}')
+                                                                print(f'\nÉneklős Csávó: {nev}, tetszik a neved.')
+                                                                input('\nENTER')
+                                                                os.system('cls')
+                                                                xp += 5
+                                                                print(f'Energia: {energia}%', end='\t\t')
+                                                                print(f'Veszély: {veszely}%', end='\t\t')
+                                                                print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                                print(f'{ido}', end='\t\t')
+                                                                print(f'XP: {xp}')
+                                                                print(f'\nAz éneklős Csávó megáldott téged. A tapasztalati szinted {xp}-re növekedett. A napi max munkaidő 9 órára emelkedett.')
+                                                                perc += 10
+                                                                ido = f'{ora}:{perc}'
+                                                                if perc > 60:
+                                                                    ora += 1
+                                                                    perc = perc % 60
+                                                                if perc == 60:
+                                                                    ora += 1
+                                                                    perc = 0
+                                                                    ido = f'{ora}:{perc}0'
+                                                                if perc >= 1 and perc < 10:
+                                                                    ido = f'{ora}:0{perc}'
+                                                                    v == '2'
+                                                                input('\nENTER')
+                                                    while v == '2':
+                                                        os.system('cls')
+                                                        print(f'Energia: {energia}%', end='\t\t')
+                                                        print(f'Veszély: {veszely}%', end='\t\t')
+                                                        print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                        print(f'{ido}', end='\t\t')
+                                                        print(f'XP: {xp}')
+                                                        hely = baross_ut()
+                                                        esemeny = baross_ut2()
+                                                        v = input('Hova szeretnél menni? ')
+                                                        match v:
+                                                            case '1':
+                                                                os.system('cls')
+                                                                energia -= 2
+                                                                perc += 5
+                                                                ido = f'{ora}:{perc}'
+                                                                if perc > 60:
+                                                                    ora += 1
+                                                                    perc = perc % 60
+                                                                if perc == 60:
+                                                                    ora += 1
+                                                                    perc = 0
+                                                                    ido = f'{ora}:{perc}0'
+                                                                if perc >= 1 and perc < 10:
+                                                                    ido = f'{ora}:0{perc}'
+                                                                print(f'Energia: {energia}%', end='\t\t')
+                                                                print(f'Veszély: {veszely}%', end='\t\t')
+                                                                print(f'Egyenleg: {penz}Ft', end='\t\t')
+                                                                print(f'{ido}', end='\t\t')
+                                                                print(f'XP: {xp}')
+                                                                hely = kfc()
+                                                                v = input('Mit fogsz csinálni? ')
                                     case '2':
                                         energia -= 2
                                         perc += 10
