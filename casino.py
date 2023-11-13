@@ -44,8 +44,8 @@ while egyenleg > 0:
 print("Nincs elég pénzed.")
 
 #Roll the dice
-'''
-dice_art = {
+
+kocka_kinezet = {
     1: ("┌─────────┐",
         "│         │",
         "│    ●    │",
@@ -78,25 +78,24 @@ dice_art = {
         "└─────────┘")
 }
 
-dice = []
-total = 0
-num_of_dice = int(input("How many dice?: "))
+kocka = []
+osszesKocka = 0
+szam_kocka = int(input("Mennyi kockára akarsz fogadni? "))
 
-for die in range(num_of_dice):
-    dice.append(random.randint(1, 6))
+for die in range(szam_kocka):
+    kocka.append(random.randint(1, 6))
 
 # PRINT VERTICALLY
-for die in range(num_of_dice):
-    for line in dice_art.get(dice[die]):
-       print(line)
+#for die in range(szam_kocka):
+#   for line in kocka_kinezet.get(kocka[die]):
+#      print(line)
 
 # PRINT HORIZONTALLY
 for line in range(5):
-    for die in dice:
-        print(dice_art.get(die)[line], end="")
+    for die in kocka:
+        print(kocka_kinezet.get(die)[line], end="")
     print()
 
-for die in dice:
-    total += die
-print(f"total: {total}")
-'''
+for die in kocka:
+    osszesKocka += die
+print(f"Összesen: {osszesKocka}")
