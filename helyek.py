@@ -42,14 +42,14 @@ def plaza():
 def meki():
     print('\nHelyszín: Meki')
     print('1: Eszel (2500Ft, +35% energia)')
-    print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
-    print('Vissza')
+    print('2: Dolgozol (1250Ft/óra, -20% energia, napi max 6 óra)')
+    print('3: Vissza')
 
 def kfc():
-    print('\nHelyszín: Meki')
-    print('1: Eszel (2500Ft, +35% energia)')
+    print('\nHelyszín: Kfc')
+    print('1: Eszel (2000Ft, +30% energia)')
     print('2: Dolgozol (1000Ft/óra, -20% energia, napi max 6 óra)')
-    print('Vissza')
+    print('3: Vissza')
 
 def kaszi():
     print('\nHelyszín: Kaszinó')
@@ -72,3 +72,8 @@ def baross_ut2():
     print('1: KFC')
     print('2: Meki')
     print('3: Vissza')
+
+def dunaKapuTer():
+    print('\nHelyszín: Dunakapu Tér')
+    print('1: igen (650Ft, +10% energia/gombóc)')
+    print('2:Nem (Vissza)')
