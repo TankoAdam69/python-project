@@ -38,8 +38,8 @@ nav{
 }
 
 .nav-item{
-    margin-left: 100px;
-    margin-right: 70px;
+    margin-left: 200px;
+    margin-right: 80px;
 }
 
 .cim{
@@ -51,4 +51,13 @@ nav{
     text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+li{
+    padding-left: 10px;
+}
+ul{
+    list-style-type:circle;
+    padding-left: 20%;
+    margin-left: 5%;
 }

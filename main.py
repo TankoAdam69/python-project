@@ -30,7 +30,7 @@ def lose():
 
 print('Győr szimulátor') 
 print('1: Start')
-print('2: Kilépés')
+print('2: Kilépésd')
 v = input('Választás: ')
 
 def main():
