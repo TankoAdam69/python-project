@@ -19,7 +19,7 @@ def aluljaro():
 
 def vasutallomas():
     print('\nHelyszín: Vasútállomás')
-    print('1: Igen (15000)')
+    print('1: Igen (15000Ft)')
     print('2: Nem (Vissza vidékibe)')
 
 def allomasiDohi():
@@ -76,4 +76,77 @@ def baross_ut2():
 def dunaKapuTer():
     print('\nHelyszín: Dunakapu Tér')
     print('1: igen (650Ft, +10% energia/gombóc)')
+    print('2: Nem (Vissza)')
+
+def szinhaz():
+    print('\nHelyszín: Színház')
+    print('1: Megnézel egy előadást. (5000Ft, +70% energia)')
+    print('2: Dolgozol')
+    print('3: Vissza')
+
+def szinhazMunka():
+    print('\nHelyszín: Színház')
+    print('1: Takarító (min. 1 előadás, 1000Ft/1,5 óra, -10% energia)')
+    print('2: Biztonsági őr (min. 2 előadás, 3500Ft/óra, -45% energia)')
+    print('3: Színész (maximális xp szint (5) kell, 5000Ft/előadás (3 óra), -55% energia)')
+    print('4: Vissza')
+
+def arkad():
+    print('\nHelyszín: Árkád')
+    print('1: Spar (700Ft, +15% energia)')
+    print('2: Fagyi (650Ft, +10% energia/gombóc)')
+    print('3: Ruhavásárlás (-15% veszély, 5000Ft)')
+    print('4: Dolgozol (Biztonsági őr, -45% energia, 3000Ft/óra)')
+    print('5: ETO Park')
+    print('6: Vissza')
+
+def ruhavasarlas():
+    print('\nHelyszín: Árkád')
+    print('1: Bershka')
+    print('2: New Yorker')
+    print('3: H&M')
+    print('4: Pull&Bear')
+    print('5: Vissza')
+
+def bershka():
+    print('\nHelyszín: Bershka')
+    print('1: Igen (5000Ft)')
+    print('2: Nem (Vissza)')
+
+def newYorker():
+    print('\nHelyszín: New Yorker')
+    print('1: Igen (5000Ft)')
+    print('2: Nem (Vissza)')
+
+def handM():
+    print('\nHelyszín: H&M')
+    print('1: Igen (5000Ft)')
+    print('2: Nem (Vissza)')
+
+def pullAndBear():
+    print('\nHelyszín: Pull&Bear')
+    print('1: Igen (5000Ft)')
+    print('2: Nem (Vissza)')
+
+def fagyizo():
+    print('\nHelyszín: Fagyizó')
+    print('1: Igen (650Ft, +10% energia/gombóc)')
+    print('2: Nem (Vissza)')
+
+def etoPark():
+    print('\nHelyszín: ETO Park')
+    print('1: Cutler (-60% energia, -30% veszély, 1500Ft, min 1% veszély)')
+    print('2: Aldi (1000Ft, +20% energia)')
+    print('3: Cyberjump (2500Ft/óra, -40% energia, +0,3XP)')
+    print('4: Vissza')
+
+def cutler():
+    print('Helyszín: Cutler')
+    print('1: Igen (-60% energia, -30% veszély, 1500Ft, min 1% veszély)')
+    print('2: Nem (Vissza)')
+
+def cyberjump():
+    print('Helyszín: Cyberjump')
+    print('1: Igen (2500Ft/óra, -40% energia, +0,3XP)')
     print('2:Nem (Vissza)')
+    
